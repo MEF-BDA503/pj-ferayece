@@ -11,4 +11,4 @@ I finished Lesson 2 on the Udacity course. I did all the work required and all t
 
 ## Week 2 (Oct 10)
 
-+ [Here](files/example_homework_1.html) is my 5 interesting R resources. 
++ [Here](files/example_homework_1_vs2.html) is my 5 interesting R resources. 
