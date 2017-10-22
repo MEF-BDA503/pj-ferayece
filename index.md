@@ -1,4 +1,4 @@
-#  One more cup of coffee for R
+#  Milestones ...
 
 ## Week 3 (Oct 24)
 
