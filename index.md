@@ -1,7 +1,6 @@
 #  Progress Journal
 
 ## Week 3 (Oct 24)
-______________________________________________________________________________________________
 
 + The data set I am propose to use in my project is the Vocabulary and Education dataset supplied by U.S. General Social Surveys, 1972-2004. [Here](files/Assignment2.html) is the data and my initial exploratory data analysis on it.
 
