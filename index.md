@@ -13,4 +13,4 @@
 
 + [Here](files/example_homework_1_vs2.html) is my 5 interesting R resources. 
 
-<img src="test.png" width="669" height="400" alt="Cover image" />  
+<img src="spiral.jpg" width="400" height="200" alt="Cover image" />  
