@@ -1,4 +1,4 @@
-#  Baby Steps
+## One more cup of coffee for R 
 
 ## Week 3 (Oct 24)
 
