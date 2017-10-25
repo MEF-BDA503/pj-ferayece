@@ -1,0 +1,44 @@
+---
+title: "One more cup of coffee for R"
+author: "Feray Ece Topcu - BDA 503 - Fall 2017"
+output:
+  html_document:
+    theme: united
+    highlight: tango
+---
+
+```{r,echo=FALSE,eval=FALSE}
+rmarkdown::render("/Users/berkorbay/Dropbox/Courses_given/MEF_BDA_503_2017F/Guidelines/example_homework_1.Rmd",output_format="pdf_document")
+rmarkdown::render("/Users/berkorbay/Dropbox/Courses_given/MEF_BDA_503_2017F/Guidelines/example_homework_1.Rmd",output_format="html_document")
+```
+
+
+##Interesting R Resources
+
+______________________________________________________________________________________________
+
+[As a Reminder: TutorialsPoint](http://www.tutorialspoint.com/r/)
+
+  TutorialPoint is a life-saver if you are learning a new programming language. There is a lot of documentation and examples which you can try online on website. R documentation is very useful for beginners. All of basic topics such as data types, loops, etc. are covered in an efficient order. This website can be described as good summary for beginners and it is a powerful reminder for me.
+
+[R For Dummies](http://www.ievbras.ru/ecostat/Kiril/R/Biblio/R_eng/R%20dummies.pdf)
+  
+  R For Dummies is a book for beginners on R programming.It is an introduction to the statistical programming language
+known as R. It starts by introducing the interface and work our way from the very basic concepts of the language through more sophisticated data manipulation and analysis. Authors claim that after reading this book, you should be able to manipulate your data in the form you want and understand how to use functions.
+
+[Learn More: R-Bloggers](https://www.r-bloggers.com/)
+
+  R-Bloggers is a platform to learn more and gain different visions about R. R-Bloggers is about empowering bloggers to empower other R users.It is a blog aggregator of content contributed by bloggers who write about R (in English). The site helps R bloggers and users to connect and follow the “R blogosphere”. It allows you to discover new blogs, follow them, connect through facebook to other R-Lovers, and participate as a blogger and share your information easily. 
+  
+[Different Datasets for R](https://vincentarelbundock.github.io/Rdatasets/datasets.html)
+
+  It is a special collection of different datasets for R programming language. The most important advantage of this website is that there are various datasets from various topics. For example, you can find "Smoking, Alcohol and (O)esophageal Cancer" data, "Motor Trend Car Road Tests" data and "	Failures of Air-conditioning Equipment" data together in one page. It is so useful if you are interested to work on interesting datasets of several subjects. This website has more than 100 datasets with explanation of their properties such as row and colomn numbers. Datasets exists in two formats: csv and doc. 
+
+[Guideline to Write Perfect Code in R](https://google.github.io/styleguide/Rguide.xml)
+
+  Google explains its style-guide as "The goal of the R Programming Style Guide is to make our R code easier to read, share, and verify. The rules below were designed in collaboration with the entire R user community at Google."
+So; it can be said that this style guide is a collection of standard rules,defined by R programmers, which we should be careful when we are coding in R. The guideline includes fundamental information such as simple tricks to write readable code and what should we avoid to use.
+
+
+
+

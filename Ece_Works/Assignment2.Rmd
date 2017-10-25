@@ -1,0 +1,90 @@
+---
+title: "Analysis of Vocabulary and Education"
+author: "Feray Ece Topcu - BDA 503 - Fall 2017"
+output:
+  html_document:
+    theme: united
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+### Vocabulary and Education Dataset
+
+  [Vocabulary and Education dataset](https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/csv/car/Vocab.csv) supplied by U.S. General Social Surveys, 1972-2004. It contains vocabulary test score of respondents according to some parameters in U.S. between 1974-2004.
+
+###Content
+  The Vocab dataset has 21,638 rows and 5 columns.
+
++ ***year:*** Year of the survey.
++ ***sex:*** Sex of the respondent, Female or Male.
++ ***education:*** Education in years.
++ ***vocabulary:*** Vocabulary test score: number correct on a 10-word test.
+
+*************
+
+###Initial Exploratory Analysis
+
+This dataset includes 21,638 observations  and 5 variables as listed below. I try to find correlation between Vocabulary test grade and Education. Additionally, I examine the difference between two genders according the years.
+
+```{r,echo=FALSE,results="hide",include=FALSE}
+urlfile<-'https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/csv/car/Vocab.csv'
+dsin<-read.csv(url(urlfile))
+library(dplyr)#glimpse function
+library(ggplot2)# graphs and other staff.
+```
+
+```{r}
+#Quick review of dataset
+glimpse(dsin)
+```
+
+```{r}
+#Which years are included on research and average education in year and vocabulary test score according to years.
+
+g3<-dsin %>% group_by(year) %>% summarise(Avg_Educ_In_Year = round(sum(education)/n(),2) ,Avg_Vocab_Test=round(sum(vocabulary)/n(),2))
+g3
+
+ggplot(g3, aes(year)) + 
+  geom_point(aes(y = Avg_Vocab_Test, colour = "Average Vocabulary Test Score")) +geom_point(aes(y = Avg_Educ_In_Year, colour = "Average Education in Year"))+scale_colour_manual(values=c("red", "blue")) +theme_minimal() + xlab("Year") + ylab("Average") +ggtitle("Is there any correlation?")
+
+##Expand the output with genders.
+a<-dsin %>% group_by(year,sex)%>%summarise(cnt=n(),edu_sum=sum(education),voc_sum=sum(vocabulary),avg_edu=round(edu_sum/cnt,2), avg_vocab=round(voc_sum/cnt,2))
+##Female
+a%>%filter(sex=="Female")
+##Male
+a%>%filter(sex=="Male")
+##Draw a graph which explains the difference between genders according to year.
+ggplot(data=a, aes(x=sex,y=year,color=avg_vocab,size=5))+ coord_flip() + geom_point() + scale_color_continuous(low="red",high="black",guide="colourbar") +ggtitle("Who failed?") +
+xlab("Gender") + ylab("Years")
+```
+
+*************
+
+##References
+
+##Dataset 
+  [https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/csv/car/Vocab.csv]()
+  
+##Analysis
+  [https://cran.r-project.org/web/packages/dplyr/vignettes/dplyr.html](Dplyr)
+  
+  [https://www.rstudio.com/resources/cheatsheets/]()
+  
+  [https://mef-bda503.github.io/files/02_Tidyverse.html#1](Class Presentation about Tidyverse & Dplyr) 
+  
+
+##Graphs
+  [https://plot.ly/ggplot2/](Thanks God! I found it!)
+  
+  [http://tutorials.iq.harvard.edu/R/Rgraphics/Rgraphics.html](ggplot2)
+  
+  [http://ggplot2.tidyverse.org/](ggplot2)
+  
+  [https://stackoverflow.com/questions/3777174/plotting-two-variables-as-lines-using-ggplot2-on-the-same-graph](Special thanks to Stackoverflow, of course! )
+  
+
+  
+  
+  
