@@ -28,7 +28,7 @@ known as R. It starts by introducing the interface and work our way from the ver
 
 [Learn More: R-Bloggers](https://www.r-bloggers.com/)
 
-  R-Bloggers is a platform to learn more and gain different visions about R. R-Bloggers is about empowering bloggers to empower other R users.It is a blog aggregator of content contributed by bloggers who write about R (in English). The site helps R bloggers and users to connect and follow the “R blogosphere”. It allows you to discover new blogs, follow them, connect through facebook to other R-Lovers, and participate as a blogger and share your information easily. 
+  R-Bloggers is a platform to learn more and gain different visions about R. R-Bloggers is about empowering bloggers to empower other R users.It is a blog aggregator of content contributed by bloggers who write about R (in English). The site helps R bloggers and users to connect and follow the Â“R blogosphereÂ”. It allows you to discover new blogs, follow them, connect through facebook to other R-Lovers, and participate as a blogger and share your information easily. 
   
 [Different Datasets for R](https://vincentarelbundock.github.io/Rdatasets/datasets.html)
 
