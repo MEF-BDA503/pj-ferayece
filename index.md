@@ -1,5 +1,9 @@
 ## One more cup of coffee for R 
 
+## Week 5 (Dec 05) 
+
++ [Here](files/Assignment3_SpamDataAnalysis.html) is my first CART analysis with Mail-SPAM Data.  
+
 ## Week 3 (Oct 24)
 
 + The data set I am propose to use in my individual project is the Vocabulary and Education dataset supplied by U.S. General Social Surveys, 1972-2004. [Here](files/Assignment2.html) is the data and my initial exploratory data analysis on it.
