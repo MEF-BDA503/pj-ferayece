@@ -1,5 +1,8 @@
 ## One more cup of coffee for R 
 
+## Week 8 (Jan 10)
++[Here](files/final_FerayEceTopcu.pdf) is my solution of final exam of BDA 503.
+
 ## Week 5 (Dec 05) 
 
 + [Here](files/Assignment3_SpamDataAnalysis.html) is my first CART analysis with Mail-SPAM Data.  
