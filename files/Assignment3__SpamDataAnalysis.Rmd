@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE)
 This is an assignment can be reached from [here.](https://mef-bda503.github.io/files/assignment_spam_data.pdf) 
 Dataset can be reachable from [lecture notes.](https://mef-bda503.github.io/) It is from UCI Database. See documentation on the website for further detail.
 
-For a brief summary; the aim is buiding a CART model to detect spam mail using UCI’s Spambase data and analyze it. Performance depends on correct specification of spam/non-spam mails in the test subset.
+For a brief summary; the aim is building a CART model to detect spam mail using UCI's Spambase data and analyze it. Performance depends on correct specification of spam/non-spam mails in the test subset.
 
 *************
  
@@ -67,8 +67,9 @@ testdata<-subset(spam_data,train_test==1)
 #glimpse(traindata)
 ```
 
-### 2. Build a Model 
-+ Build the model with the training data and show it.
+### 2. Build a Tree
++ Build the tree with the training data and show it.
+
 ```{r message=FALSE,warning=FALSE}
 #build the model.
 spam_tree <- rpart(spam_or_not~.,data = traindata,control=rpart.control(minsplit = 30))
@@ -79,7 +80,7 @@ fancyRpartPlot(spam_tree)
 
 ### 3. Validation and Explication
 
-+ To validate the model I use the printcp and plotcp functions. ‘CP’ stands for Complexity Parameter of the tree. The value of cp should be least, so that the cross-validated error rate is minimum. Plotcp() provides a graphical representation to the cross validated error summary. The cp values are plotted against the geometric mean to depict the deviation until the minimum value is reached.
++ To validate generated tree, I use the printcp and plotcp functions. "CP" stands for Complexity Parameter of the tree. The value of cp should be least, so that the cross-validated error rate is minimum. Plotcp() provides a graphical representation to the cross validated error summary. The cp values are plotted against the geometric mean to depict the deviation until the minimum value is reached.
 
 ```{r message=FALSE,warning=FALSE}
 printcp(spam_tree)
@@ -123,7 +124,7 @@ prp(pruned_tree, faclen = 0, cex = 0.8, extra = 1)
 
 *************
 #### References
-- (Creating, Validating and Pruning Decision Tree in R) [https://www.edureka.co/blog/implementation-of-decision-tree/]
-- (CART with rpart) [https://rstudio-pubs-static.s3.amazonaws.com/27179_e64f0de316fc4f169d6ca300f18ee2aa.html]
-- (Statistical Models in R:Part 2) [https://mef-bda503.github.io/files/intro_to_ml_2.pdf]
--(Plot prp) [http://www.milbo.org/rpart-plot/prp.pdf]
+- [Creating, Validating and Pruning Decision Tree in R](https://www.edureka.co/blog/implementation-of-decision-tree/)
+- [CART with rpart](https://rstudio-pubs-static.s3.amazonaws.com/27179_e64f0de316fc4f169d6ca300f18ee2aa.html)
+- [Statistical Models in R:Part 2](https://mef-bda503.github.io/files/intro_to_ml_2.pdf)
+-[Plot prp](http://www.milbo.org/rpart-plot/prp.pdf)
