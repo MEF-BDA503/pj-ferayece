@@ -1,7 +1,8 @@
 ## One more cup of coffee for R 
 
 ## Week 8 (Jan 10)
-+[Here](files/final_FerayEceTopcu.pdf) is my solution of final exam of BDA 503.
++ [Here](files/final_FerayEceTopcu.pdf) is my solution of final exam of BDA 503.
++ [Here](files/final3UTF_8.rmd) is the rmd file version of my solution of final exam.
 
 ## Week 5 (Dec 05) 
 
